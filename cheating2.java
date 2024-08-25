@@ -4,7 +4,8 @@ public class cheating2
   {
     int x = 5;
     int y = 6;
-    int z = 0;
+    int z ;
     z = (x + y) / 2;
+    System.out.println(z);
   }
 }

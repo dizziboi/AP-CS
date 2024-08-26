@@ -1,4 +1,5 @@
-public class dogYears
+package Calc;
+public class dogYears2Calc
 {
   public static void main (String[] args)
 {
@@ -9,26 +10,26 @@ public class dogYears
 
         // Write a formula to calculate your age from the currentYear and
         // your birthYear variables
-        int age = 17;
-          System.out.println(currentYear - birthYear);
+        int age ;
+          age = currentYear-birthYear;
           
 
         // Write a formula to calculate your dog's age from the currentYear
         // and dogBirthYear variables
-        int dogAge = 5;
-          System.out.println(currentYear - dogBirthYear);
+        int dogAge ;
+          dogAge = currentYear-dogBirthYear;
 
         // Calculate the age of your dog in dogYears (7 times your dog's age
         // in human years)
-        int dogYearsAge = 35;
-        System.out.println(dogAge*7);
+        int dogYearsAge ;
+        dogYearsAge = dogAge*7;
 
         // Print out your age, your dog's age, and your dog's age in dog
         // years. Make sure you print out text too so that the user knows what
         // is being printed out.
         System.out.println("your age is " + age);
         System.out.println("your dog's age is " + dogAge );
-        System.out.println("your dog's age in dog years are " + dogYearsAge);
+        System.out.println("your dog's age in dog years is " + dogYearsAge);
         
         
   }

@@ -9,18 +9,18 @@ public class dogYears2
 
         // Write a formula to calculate your age from the currentYear and
         // your birthYear variables
-        int age = 0;
+        int age ;
           age = currentYear-birthYear;
           
 
         // Write a formula to calculate your dog's age from the currentYear
         // and dogBirthYear variables
-        int dogAge = 0;
+        int dogAge ;
           dogAge = currentYear-dogBirthYear;
 
         // Calculate the age of your dog in dogYears (7 times your dog's age
         // in human years)
-        int dogYearsAge = 0;
+        int dogYearsAge ;
         dogYearsAge = dogAge*7;
 
         // Print out your age, your dog's age, and your dog's age in dog

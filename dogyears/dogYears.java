@@ -28,7 +28,7 @@ public class dogYears
         // is being printed out.
         System.out.println("your age is " + age);
         System.out.println("your dog's age is " + dogAge );
-        System.out.println("your dog's age in dog years are" + dogYearsAge);
+        System.out.println("your dog's age in dog years are " + dogYearsAge);
         
         
   }

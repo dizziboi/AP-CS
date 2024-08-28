@@ -1,3 +1,4 @@
+package random;
 public class inx
 {
   public static void main (String[] args)

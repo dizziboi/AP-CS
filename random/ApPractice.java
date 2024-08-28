@@ -1,3 +1,4 @@
+package random;
 public class ApPractice
 {
   public static void main (String[] args)

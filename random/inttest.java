@@ -1,3 +1,4 @@
+package random;
 public class inttest
 {
   public static void main (String[] args)

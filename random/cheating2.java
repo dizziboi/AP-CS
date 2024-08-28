@@ -1,3 +1,4 @@
+package random;
 public class cheating2
 {
   public static void main(String[] args)

@@ -1,3 +1,4 @@
+package random;
 public class Challenge1_6
 {
     public static void main(String[] args)

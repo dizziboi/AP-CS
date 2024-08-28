@@ -1,3 +1,4 @@
+package random;
 public class idrk {
     public static void main(String[] args) {
         

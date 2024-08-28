@@ -1,3 +1,4 @@
+package random;
 public class truman
 {
    public static void main(String[] args)

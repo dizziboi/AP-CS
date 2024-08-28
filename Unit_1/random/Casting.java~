@@ -1,0 +1,16 @@
+public class Casting
+{
+    public static void main(String[] args)
+    {
+        System.out.println(3 / 4);          // int divided by int
+        System.out.println(3.0 / 4);        // double divided by int
+        System.out.println(3 / 4.0);        // int divided by double
+        System.out.println((double) 3 / 4); // int cast to double, divided by int
+        System.out.println((int) 3.0 / 4);  // double cast to int, divided by int
+        System.out.println((double) 5 / 2);
+        // Add a line of code that prints out the result of dividing 5 by 2
+        //  using a (double) cast.
+
+    }
+}
+

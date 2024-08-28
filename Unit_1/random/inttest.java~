@@ -1,0 +1,9 @@
+public class inttest
+{
+  public static void main (Strings[] args)
+  {
+    int n = 10;
+      int result = 2 * n;
+    System.out.print(result);
+  }
+}

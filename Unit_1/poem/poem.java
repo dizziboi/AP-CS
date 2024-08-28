@@ -5,5 +5,6 @@ public class poem {
         System.out.println("Violets are blue, ");  // Line 2;
         System.out.print("Unexpected '}' ");        // Line 3;
         System.out.print("on line 32. ");           // Line 4;
+        System.out.println("ssh test");
     }
 }

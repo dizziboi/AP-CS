@@ -1,4 +1,4 @@
-package Unit_1.Calc;
+package Unit_1.calc.gasCalc;
 
 public class gasCalc2 {
     public static void main(String[] args) {

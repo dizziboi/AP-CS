@@ -1,4 +1,4 @@
-package Unit_1.Calc;
+package Unit_1.calc;
 public class dogYearsCalc
 {
   public static void main (String[] args)

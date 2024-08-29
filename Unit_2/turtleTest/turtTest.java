@@ -1,6 +1,5 @@
 package Unit_2.turtleTest;
 import Unit_2.turtleTest.JavaSwingTurtle.World;
-import Unit_2.turtleTest.javaSwingTurtle.*;
 import java.awt.*;
 import java.util.*;
 
@@ -10,9 +9,9 @@ public class turtTest {
         World habitat = new World(300, 300);
         Turtle yertle = new Turtle();
 
-        yertle.forward(0);
-        yertle.tilt(0);
-        yertle.forward(0);
+        yertle.forward(50);
+        yertle.tilt(90);
+        yertle.forward(100);
 
         habitat.show(true);
 

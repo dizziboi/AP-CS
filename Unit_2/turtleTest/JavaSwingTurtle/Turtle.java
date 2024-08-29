@@ -1,4 +1,4 @@
-package Unit_2.turtleTest.javaSwingTurtle;
+package Unit_2.turtleTest.JavaSwingTurtle;
 /**
  * Class that represents a turtle which is similar to a Logo turtle.
  * This class inherts from SimpleTurtle and is for students

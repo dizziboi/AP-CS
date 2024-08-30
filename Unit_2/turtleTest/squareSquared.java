@@ -1,0 +1,41 @@
+package Unit_2.turtleTest;
+import Unit_2.turtleTest.JavaSwingTurtle.*;
+import java.awt.*;
+import java.util.*;
+public class squareSquared {
+    public static void main(String[] args) {
+     World habitat = new World(500, 500);
+        Turtle yertle = new Turtle(-50,100);
+
+        //make turtle draw a square
+        yertle.forward(100);
+        yertle.right(90);
+        yertle.forward(100);
+        yertle.right(90);
+        yertle.forward(100);
+        yertle.right(90);
+        yertle.forward(100);
+        yertle.up();
+        yertle.left(90);
+        yertle.forward(50);
+        yertle.right(90);
+        yertle.forward(50);
+        yertle.down();
+        yertle.right(90);
+        yertle.forward(200);
+        yertle.right(90);
+        yertle.forward(200);
+        yertle.right(90);
+        yertle.forward(200);
+        yertle.right(90);
+        yertle.forward(200);
+       /*  yertle.forward(200);
+        yertle.right(90);
+        yertle.forward(200);
+        yertle.right(90);
+        yertle.forward(200); */
+        
+        
+
+    }
+}

@@ -9,12 +9,13 @@ public class turtTest {
         World habitat = new World(300, 300);
         Turtle yertle = new Turtle();
 
-        //yertle.forward(50);
+        yertle.forward(50);
         yertle.left(0);
-        //yertle.tilt(90);
-        //yertle.forward(100);
+        yertle.tilt(90);
+        yertle.forward(100);
 
         habitat.show(true);
+        
 
     }
 }

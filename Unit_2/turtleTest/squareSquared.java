@@ -29,13 +29,6 @@ public class squareSquared {
         yertle.forward(200);
         yertle.right(90);
         yertle.forward(200);
-       /*  yertle.forward(200);
-        yertle.right(90);
-        yertle.forward(200);
-        yertle.right(90);
-        yertle.forward(200); */
         
-        
-
     }
 }

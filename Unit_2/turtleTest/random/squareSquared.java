@@ -1,10 +1,11 @@
-package Unit_2.turtleTest;
+package Unit_2.turtleTest.random;
 import Unit_2.turtleTest.JavaSwingTurtle.*;
 import java.awt.*;
 import java.util.*;
 public class squareSquared {
     public static void main(String[] args) {
-     World habitat = new World(500, 500);
+     @SuppressWarnings("unused")
+    World habitat = new World(500, 500);
         Turtle yertle = new Turtle(-50,100);
 
         //make turtle draw a square

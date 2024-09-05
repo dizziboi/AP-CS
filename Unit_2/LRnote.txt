@@ -1,0 +1,4 @@
+To make the turtle go left 
+"turtleName".left(180);
+To make the turtle go right 
+"turtleName".right(0);

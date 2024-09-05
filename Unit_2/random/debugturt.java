@@ -2,8 +2,8 @@ package Unit_2.random;
 import java.awt.*;
 import java.util.*;
 
+import Unit_2.turtleLib.Turtle;
 import Unit_2.turtleLib.JavaSwingTurtle.*;
-import Unit_2.turtleLib.OrigTurtle.Turtle;
 
 
 public class debugturt {

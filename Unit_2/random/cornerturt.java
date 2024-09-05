@@ -1,6 +1,6 @@
 package Unit_2.random;
+import Unit_2.turtleLib.Turtle;
 import Unit_2.turtleLib.JavaSwingTurtle.*;
-import Unit_2.turtleLib.OrigTurtle.Turtle;
 
 public class cornerturt {
     public static void main(String[] args) {

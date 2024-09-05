@@ -1,7 +1,9 @@
-package Unit_2.turtleTest.random;
-import Unit_2.turtleTest.JavaSwingTurtle.*;
+package Unit_2.random;
 import java.awt.*;
 import java.util.*;
+
+import Unit_2.turtleLib.JavaSwingTurtle.*;
+import Unit_2.turtleLib.OrigTurtle.Turtle;
 
 public class turtTest {
     @SuppressWarnings("deprecation")

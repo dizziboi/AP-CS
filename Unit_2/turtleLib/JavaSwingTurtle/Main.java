@@ -4,7 +4,7 @@ import java.awt.*;
 
 public class Main {
   public static void main(String[] args) {  
-    World world = new World(400,400);
+    World world = new World(800,600);
     Turtle yertle = new Turtle(world);
     // Add your own code in here 
     yertle.setColor(Color.blue);

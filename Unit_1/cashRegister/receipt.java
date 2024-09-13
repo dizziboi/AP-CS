@@ -1,7 +1,7 @@
 package Unit_1.cashRegister;
 
 import java.util.Scanner;
-
+@SuppressWarnings("resource")
 public class receipt {
     public static void main(String[] args) {
         Scanner stuffImBuying = new Scanner(System.in); //makes the scanner object for stuff im buying

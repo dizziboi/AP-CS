@@ -33,10 +33,10 @@ public class turtleHouse {
         hurtle.turnRight();
         hurtle.forward();
         
-        hurtle.setColor(Color.green);
+        hurtle.setColor(Color.blue);
 
         hurtle.penUp(); // makes the door
-        hurtle.backward();
+        hurtle.moveTo(402,400);
         hurtle.turnRight();
         hurtle.forward(35);
         hurtle.penDown();
@@ -46,7 +46,8 @@ public class turtleHouse {
         hurtle.forward(30);
         hurtle.turnRight();
         hurtle.forward(45);
-       // hurtle.setShowInfo(true);
+        hurtle.setShowInfo(true);
+        
 
     }
     

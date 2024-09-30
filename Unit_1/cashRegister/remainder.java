@@ -1,3 +1,9 @@
+//caleb brown
+//due 9/15/24
+// Submitted 9/15/24
+//Lab 1 Cash Register
+
+
 package Unit_1.cashRegister;
 
 import java.util.Scanner;

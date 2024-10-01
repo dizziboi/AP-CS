@@ -5,14 +5,32 @@
 
 package Unit_2.random;
 import java.util.Scanner;
-import java.math.*;
+
+import Unit_1.random.name;
+
 
 public class name_sort {
+    static void askForName() { //Method for asking your name 
+        Scanner myName = new Scanner(System.in); //makes the scanner object for stuff im buying
+        System.out.println("what is your name");
+        String Name = myName.nextLine(); //reads the scanner 
+        int spaceFinder = Name.indexOf(" ");// detecst the first space 
+        System.out.print(spaceFinder);
+    }
+    static void firstName(String Name , int spaceFinder){
+        //int spaceFinder = Name.indexOf(" ");
+        System.out.println(spaceFinder);
+        System.out.print(Name.substring(0,spaceFinder ));
+    }
+    static int spaceFinder(){
+        return int spaceFinder = Name.indexOf(" ");// detecst the first space ;
+
+    }
+
+    
     public static void main(String[] args) {
-        Scanner nameInput = new Scanner(System.in); //makes the scanner object for the price input
-        System.out.println("What is your name ");
-        Double name = nameInput.nextDouble(); //reads the scanner 
-        System.out.println(name);  
+
+        askForName();
     }
     
 }

@@ -9,6 +9,8 @@ have a refresh function where it deletes the part of the name that was printed
 
 import java.util.Scanner;
 
+import Unit_1.cashRegister.scannerPrototype;
+
 
 public class namesort_piglatin {
         public static String printName() { //Method for asking your name 
@@ -18,8 +20,8 @@ public class namesort_piglatin {
         int spaceFinder = fullName.indexOf(" ");// detects the first space in the name
         String firstName = fullName.substring(0,spaceFinder); // finds the first name
         System.out.println("First Name: " + firstName); //prints out the first name
-      
         fullName = fullName.replaceFirst(firstName, ""); //removes the first name from the full name String 
+        
         int middleLastLength = fullName.length(); //finds the length of the name 
         String fullNameTrimed = fullName.substring(1, middleLastLength); //resmoves front the space
         int spaceFinder2 = fullNameTrimed.indexOf(" ");// detects the second space in the name 
@@ -34,12 +36,26 @@ public class namesort_piglatin {
         return firstName;
 
     }
-     public static String pigLatin(){
+     public static String pigLatin(){ 
+        Scanner word = new Scanner(System.in); //makes the scanner object for your name 
+        System.out.println("Type a word"); //prints out the question
+        String inputWord = word.nextLine(); //reads the scanner  
+        int wordLength = inputWord.length();
+        char firstLetter = inputWord.charAt(0); //finds the first letter
+        inputWord = inputWord.substring(1 , wordLength ); // removes the first letter
+        inputWord = inputWord + firstLetter;
+
+        System.out.println(firstLetter);
+        System.out.println(inputWord);
+        
+         String igyfied = inputWord + "ay" ; // adds the ay at the end 
+    System.out.print(igyfied);
         return null;
         
     }
     
     public static void main(String[] args) {
         printName();
+        pigLatin();
     }
 }

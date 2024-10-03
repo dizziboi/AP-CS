@@ -6,7 +6,8 @@
 import java.util.Scanner;
 
 
-public class namesort_piglatin {
+public class namesort_piglatin
+ {
         public static String printName() { //Method for asking your name 
         Scanner myName = new Scanner(System.in); //makes the scanner object for your name 
         System.out.println("what is your name"); //prints out the question

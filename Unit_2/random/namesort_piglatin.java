@@ -1,15 +1,9 @@
 //caleb brown
-//due 10/3/24
+//due 10/1/24
 //10/2/24
 //pig Latin-Name Lab 
 
-/*notes
-have a refresh function where it deletes the part of the name that was printed 
-*/
-
 import java.util.Scanner;
-
-import Unit_1.cashRegister.scannerPrototype;
 
 
 public class namesort_piglatin {
@@ -45,11 +39,8 @@ public class namesort_piglatin {
         inputWord = inputWord.substring(1 , wordLength ); // removes the first letter
         inputWord = inputWord + firstLetter;
 
-        System.out.println(firstLetter);
-        System.out.println(inputWord);
-        
          String igyfied = inputWord + "ay" ; // adds the ay at the end 
-    System.out.print(igyfied);
+        System.out.println("In piglatin: " + igyfied);
         return null;
         
     }

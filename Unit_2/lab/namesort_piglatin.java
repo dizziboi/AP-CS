@@ -39,7 +39,7 @@ public class namesort_piglatin {
         inputWord = inputWord.substring(1 , wordLength ); // removes the first letter
         inputWord = inputWord + firstLetter;
 
-         String igyfied = inputWord + "ay" ; // adds the ay at the end 
+        String igyfied = inputWord + "ay" ; // adds the ay at the end 
         System.out.println("In piglatin: " + igyfied);
         return null;
         

@@ -1,4 +1,4 @@
-package Unit_3.If.lab;
+package Unit_3.lab;
 import java.util.Scanner;
 
 public class bmicalc {

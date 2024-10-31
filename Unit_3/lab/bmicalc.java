@@ -29,9 +29,9 @@ public class bmicalc {
          // System.out.print(bmiNum);
         if (bmiNum > 30){ //sees if your bmi is over 30
             System.out.println("obese");
-        } else if(bmiNum < 29 || bmiNum > 25) { // sees if your bmi is between 30 and 25
+        } else if(bmiNum < 29 && bmiNum > 25) { // sees if your bmi is between 30 and 25
             System.out.println("overweight");
-        } else if(bmiNum <= 24 || bmiNum > 18.5){ // sees if your bmi is betwwn 25 and 18.5
+        } else if(bmiNum <= 24 && bmiNum > 18.5){ // sees if your bmi is betwwn 25 and 18.5
             System.out.println("normal");
         } else if(bmiNum < 18.5){ // sees if your bmi is less than 18.5
             System.out.println("underweight");

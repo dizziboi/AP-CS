@@ -14,12 +14,12 @@ public class tweakingTurt {
         for(int i = 1; i <= 10; i++)
         
         {
-            yertle.forward(75);
+            yertle.forward(20);
 
             // Write an if/else statement that uses
             // Math.random() to do a coin flip (50%) to choose
             // between yertle.turnRight() or turnLeft()
-            int coinFlip =  (int) (2 * Math.random());
+            int coinFlip =  (int) (Math.random() +.5 );
             System.out.println(coinFlip);
             if (coinFlip == 0){
                 yertle.turnLeft();

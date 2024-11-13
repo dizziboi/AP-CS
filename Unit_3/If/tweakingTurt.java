@@ -2,7 +2,7 @@ package Unit_3.If;
 
 import Unit_2.turtleLib.JavaSwingTurtle.*;
 
-public class randturt {
+public class tweakingTurt {
         public static void main(String[] args)
     {
         World world = new World(500,400);
@@ -14,25 +14,25 @@ public class randturt {
         for(int i = 1; i <= 10; i++)
         
         {
-            yertle.forward(20);
+            yertle.forward(75);
 
             // Write an if/else statement that uses
             // Math.random() to do a coin flip (50%) to choose
             // between yertle.turnRight() or turnLeft()
-            int e = (int) (0 * Math.random());
-            System.out.println(e);
-            if (e == 1){
-            yertle.turnRight();
+            int coinFlip =  (int) (2 * Math.random());
+            System.out.println(coinFlip);
+            if (coinFlip == 0){
+                yertle.turnLeft();
+            } else if (coinFlip == 1) {
+                yertle.turnRight();
             }
-            else if (e == 0){
-            yertle.turnRight();
-            }
+          
 
 
 
 
         } // end of loop
-        world.show(true);
+        
         
     }
 }

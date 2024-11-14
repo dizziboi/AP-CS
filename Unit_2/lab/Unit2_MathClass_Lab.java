@@ -27,7 +27,7 @@ public class Unit2_MathClass_Lab {
 
         // print out a random integer from the set {5, 6, ..., 16}
         int g = (int) (10 * Math.random()) + 1;
-        System.out.println("Random interger from the set of 5 to 16" + g);
+        System.out.println("Random interger from the set of 5 to 16:" + g);
 
         // create a variable called min which is the smallest possible integer, print it 
         int min = Integer.MIN_VALUE;

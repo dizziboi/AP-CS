@@ -40,23 +40,17 @@ public class PrimesLab {
     }
 
     public static int fourHeads(){
-    boolean t = true;
     int hCount = 0;
-    int tCount = 0;
-    String line = "";
-    boolean fourHeads = false;
         while (hCount <= 3){
         int coinFlip =  (int) (Math.random() +.5 );
         if (coinFlip == 0){
-            System.out.print(" H ");
+            System.out.print(" H");
             hCount++;
         } else {
-            System.out.print(" T ");
+            System.out.print(" T");
             hCount = 0;
-
         }
-        System.out.print(line);
-    }
+    } System.out.print("Four heads in a row!");
             return 0;
     }
 

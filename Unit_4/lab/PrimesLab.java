@@ -48,10 +48,12 @@ public class PrimesLab {
         while (hCount <= 3){
         int coinFlip =  (int) (Math.random() +.5 );
         if (coinFlip == 0){
-            line= line + "H";
+            System.out.print(" H ");
             hCount++;
         } else {
-            line= line + "T";
+            System.out.print(" T ");
+            hCount = 0;
+
         }
         System.out.print(line);
     }

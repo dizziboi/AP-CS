@@ -9,7 +9,7 @@ public class PrimesLab {
         int number = primeInput.nextInt(); //reads the scanner 
         int count = 0;
         System.out.println(number);
-        while ((number % 2 >= count)) {
+        while (number % 2 < 2 &&  count > number) {
             count++;
             
 

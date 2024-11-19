@@ -2,7 +2,7 @@ package Unit_3.If;
 
 import java.util.Scanner;
 
-public class furryTest 
+public class buzzfeed 
 {
       public static void main(String[] args)
   {

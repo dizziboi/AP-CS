@@ -8,16 +8,15 @@ public class PrimesLab {
         System.out.println("Type in a number ");
         int numInput = primeInput.nextInt(); //reads the scanner 
         int factor = 1;
-        int factorCount = 1;
-        while (factor<=numInput) {
-            if(numInput%factor==0){
-                System.out.println("Found factor: "+factor);
+        int counter = 0;
+        while(factor<=numInput) {
+            if(numInput%factor==0) {
+                counter++;
             }
             factor++;
-            factorCount++;
-
+            
         }
-        System.out.print(factorCount);
+        System.out.print(counter);
         return factor;
     }
     public static void main(String[] args) {

@@ -21,20 +21,21 @@ public class PrimesLab {
   
     }
     public static boolean isPrime() {
-       int factor = countFactors();    
+       int factor = countFactors();   
+       boolean isPrime ; 
        if (factor <= 2){
         System.out.println("true");
+        isPrime = true;
        } else{
         System.out.println("false");
+        isPrime = false;
        }
-        return false;
+        return isPrime;
     }
 
     public static int countPrimes(){
-        
-       if(isPrime()){
+    //I could not figure out how to make this
 
-        }
         return 0;
         
     }
@@ -50,13 +51,13 @@ public class PrimesLab {
             System.out.print(" T");
             hCount = 0;
         }
-    } System.out.print("Four heads in a row!");
+    } System.out.print(" \nFour heads in a row!");
             return 0;
     }
 
     
     public static void main(String[] args) {
-        //isPrime();
+        isPrime();
         fourHeads();
     }
 }

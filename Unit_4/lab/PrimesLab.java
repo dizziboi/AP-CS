@@ -9,7 +9,7 @@ import java.util.Scanner;
 public class PrimesLab {
  
     public static int countFactors(){
-        Scanner primeInput = new Scanner(System.in); //makes the scanner object for the price input
+        Scanner primeInput = new Scanner(System.in); //makes the scanner object for the number input
         System.out.println("Type in a number ");
         int numInput = primeInput.nextInt(); //reads the scanner 
         int factor = 1;

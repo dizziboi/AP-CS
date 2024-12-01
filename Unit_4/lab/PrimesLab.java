@@ -3,7 +3,7 @@
 //NumberFun_CoinFlip 
 //due NOV 17 (homework 504)
 
-package Unit_4.lab;
+
 import java.util.Scanner;
 
 public class PrimesLab {

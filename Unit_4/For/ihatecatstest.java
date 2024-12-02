@@ -1,6 +1,5 @@
 package Unit_4.For;
 
-
 public class ihatecatstest {
     public static void main(String[] args)
     {

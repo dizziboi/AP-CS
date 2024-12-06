@@ -20,7 +20,7 @@ public class Review {
   
   static{
     try {
-      Scanner input = new Scanner(new File("cleanSentiment.csv"));
+      Scanner input = new Scanner(new File("/home/dizziboi/Documents/ap-cs/AP-CS/Unit_4/ConsumerReviewLabFiles/cleanSentiment.csv"));
       while(input.hasNextLine()){
         String[] temp = input.nextLine().split(",");
         sentiment.put(temp[0],Double.parseDouble(temp[1]));
@@ -35,7 +35,7 @@ public class Review {
   
   //read in the positive adjectives in positiveAdjectives.txt
      try {
-      Scanner input = new Scanner(new File("positiveAdjectives.txt"));
+      Scanner input = new Scanner(new File("/home/dizziboi/Documents/ap-cs/AP-CS/Unit_4/ConsumerReviewLabFiles/positiveAdjectives.txt"));
       while(input.hasNextLine()){
         String temp = input.nextLine().trim();
         System.out.println(temp);
@@ -49,7 +49,7 @@ public class Review {
  
   //read in the negative adjectives in negativeAdjectives.txt
      try {
-      Scanner input = new Scanner(new File("negativeAdjectives.txt"));
+      Scanner input = new Scanner(new File("/home/dizziboi/Documents/ap-cs/AP-CS/Unit_4/ConsumerReviewLabFiles/negativeAdjectives.txt"));
       while(input.hasNextLine()){
         negAdjectives.add(input.nextLine().trim());
       }
@@ -203,5 +203,10 @@ public class Review {
   
     // return number of stars
     return stars; 
+  }
+
+  public static void main(String[] args) {
+     double value = Review.sentimentVal("happily");
+     System.out.println(value);
   }
 }

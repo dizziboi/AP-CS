@@ -10,7 +10,7 @@ public class bootyflakes {
     {
         World world = new World(300, 300);
         Turtle yertle = new Turtle(world);
-        yertle.setSpeed(25); // fast 0 - 100 slow
+        //yertle.setSpeed(25); // fast 0 - 100 slow
         yertle.setColor(Color.blue);
 
         // Outer loop will do inner loop to draw a square,

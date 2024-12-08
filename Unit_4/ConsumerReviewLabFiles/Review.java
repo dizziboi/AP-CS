@@ -20,7 +20,7 @@ public class Review {
   
   static{
     try {
-      Scanner input = new Scanner(new File("/home/dizziboi/Documents/ap-cs/AP-CS/Unit_4/ConsumerReviewLabFiles/cleanSentiment.csv"));
+      Scanner input = new Scanner(new File("Unit_4/ConsumerReviewLabFiles/cleanSentiment.csv"));
       while(input.hasNextLine()){
         String[] temp = input.nextLine().split(",");
         sentiment.put(temp[0],Double.parseDouble(temp[1]));
@@ -35,7 +35,7 @@ public class Review {
   
   //read in the positive adjectives in positiveAdjectives.txt
      try {
-      Scanner input = new Scanner(new File("/home/dizziboi/Documents/ap-cs/AP-CS/Unit_4/ConsumerReviewLabFiles/positiveAdjectives.txt"));
+      Scanner input = new Scanner(new File("Unit_4/ConsumerReviewLabFiles/positiveAdjectives.txt"));
       while(input.hasNextLine()){
         String temp = input.nextLine().trim();
         System.out.println(temp);
@@ -49,7 +49,7 @@ public class Review {
  
   //read in the negative adjectives in negativeAdjectives.txt
      try {
-      Scanner input = new Scanner(new File("/home/dizziboi/Documents/ap-cs/AP-CS/Unit_4/ConsumerReviewLabFiles/negativeAdjectives.txt"));
+      Scanner input = new Scanner(new File("Unit_4/ConsumerReviewLabFiles/negativeAdjectives.txt"));
       while(input.hasNextLine()){
         negAdjectives.add(input.nextLine().trim());
       }
@@ -171,18 +171,35 @@ public class Review {
   {
     // read in the file contents into a string using the textToString method with the filename
 
+
     // set up a sentimentTotal variable
-    double sentimentTotal = 0;
+ 
 
     // loop through the file contents 
 
        // find each word
        // add in its sentimentVal
        // set the file contents to start after this word
-   
-   
+       
+       String review = Review.textToString(filename);
+       String wordcountFinder = review; //a duplicate of the review for the word finding process 
+       int spaceFinder = 0;
+       int wordCount = 0;
+       
+       for(wordCount=0; wordcountFinder.indexOf(" ") <= 0; wordCount++){
+        spaceFinder = wordcountFinder.indexOf(" ");
+        wordcountFinder = wordcountFinder.substring(spaceFinder);
+       }
+       spaceFinder = wordcountFinder.indexOf(" ");
+       wordcountFinder = wordcountFinder.substring(spaceFinder);
 
-
+       //debug code
+       System.out.println(spaceFinder);
+       //System.out.println(review);
+       System.out.println(wordCount);
+       System.out.println(wordcountFinder);
+       //System.out.println(review2);
+       double sentimentTotal = 0;
 
    return sentimentTotal; 
   }
@@ -206,7 +223,7 @@ public class Review {
   }
 
   public static void main(String[] args) {
-     double value = Review.sentimentVal("happily");
-     System.out.println(value);
+    Review.totalSentiment("Unit_4/ConsumerReviewLabFiles/negative_review/negativeReview 1.txt");
+    
   }
 }

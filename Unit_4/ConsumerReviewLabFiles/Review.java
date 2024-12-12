@@ -182,26 +182,26 @@ public class Review {
        // set the file contents to start after this word
        
        String review = Review.textToString(filename);
-       String wordcountFinder = review; //a duplicate of the review for the word finding process 
-       int spaceFinder = 0;
-       int wordCount = 0;
+       double total = 0;
        
-       for(wordCount=0; wordcountFinder.indexOf(" ") <= 0; wordCount++){
-        spaceFinder = wordcountFinder.indexOf(" ");
-        wordcountFinder = wordcountFinder.substring(spaceFinder);
-       }
-       spaceFinder = wordcountFinder.indexOf(" ");
-       wordcountFinder = wordcountFinder.substring(spaceFinder);
+       while(review.length()> 0)
+       {
+        int space = review.indexOf(" ");
+        String wrd;
+        if (space > -1)
+        {
+          wrd = review.substring(0,space);
+          review=review.substring(space + 1);
+        } else{
+          wrd = review;
+          review = "";
+        }
+        wrd = removePunctuation(wrd);
+        total += sentimentVal(wrd);
+        System.out.println(total);
+      }
 
-       //debug code
-       System.out.println(spaceFinder);
-       //System.out.println(review);
-       System.out.println(wordCount);
-       System.out.println(wordcountFinder);
-       //System.out.println(review2);
-       double sentimentTotal = 0;
-
-   return sentimentTotal; 
+   return total; 
   }
 
 

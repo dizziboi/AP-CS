@@ -215,7 +215,18 @@ public class Review {
     // determine number of stars between 0 and 4 based on totalSentiment value 
     int stars = 0; // change this!
     // write if statements here
-
+    double totalSentiment = totalSentiment("Unit_4/ConsumerReviewLabFiles/negative_review/negativeReview 1.txt");
+    if (totalSentiment < -10){
+      return 0;
+    } else if(totalSentiment < 0){
+      stars = 1;
+    } else if (totalSentiment <10){
+      stars = 2;
+    } else if (totalSentiment < 20){
+      stars = 3;
+    } else {
+      stars = 4;
+    }
 
   
     // return number of stars

@@ -3,11 +3,11 @@ package Unit_4;
 import java.util.Scanner;
 
 public class RpgGame {
-   public String name;
-    static String race;  
-    static String job ;
+    static String name = " ";
+    static String race = " ";  
+    static String job = " ";
     static int level = 1;
-    static int strenght = 1;
+    static int strenght = 1; 
     static int agility = 1;
     static int intelligence = 1;
     static int hit_points = 1;
@@ -17,15 +17,15 @@ public class RpgGame {
         public static double rpgGame(){
             Scanner character_Name = new Scanner(System.in); //makes the scanner object for the *scanner* input
             System.out.println("What is your name ");
-            String name = character_Name.nextLine(); //reads the scanner 
+              name = character_Name.nextLine(); //reads the scanner 
             
             Scanner character_Race = new Scanner(System.in); //makes the scanner object for the *scanner* input
             System.out.println("What is your race ");
-            String race = character_Race.nextLine(); //reads the scanner
+              race = character_Race.nextLine(); //reads the scanner
             
             Scanner character_Job = new Scanner(System.in); //makes the scanner object for the *scanner* input
             System.out.println("What is your job/class ");
-            String job = character_Job.nextLine(); //reads the scanner
+              job = character_Job.nextLine(); //reads the scanner
             
             
       
@@ -54,16 +54,39 @@ public class RpgGame {
         
         return 0;
     }
-    public static String printstatus(){
-        System.out.println("Name: " + name + "\r\n" + "Race: " + race + "\r\n" + "Job/Class: " + job);
+    public static String printStats(){
+        System.out.println("Name: " + name + "\r\n" + "Race: " + race + "\r\n" + "Job/Class: " + job + "\r\n"); //prints your name, race, and class 
+
+        System.out.println("Stats" + "\r\n" +"Level: " + level + "\r\n" + "Strength: " + strenght + "\r\n" + "Agility: " + agility + "\r\n" + "Intelligence: " + intelligence + "r\n"); //prints your level, strenght, agility, and inelelligence
+
+        System.out.println("Resources" + "\r\n" + "HP: " + hit_points + "\r\n" + "AC: " + armor_class + "\r\n" + "MP: " + mana_power);
         return null;
     }
 
+    public static int levelUp(){
+        int oldLevel = level;
+        int rand_hitPoints = (int) (Math.random()* (2 - (-2)) + -2); // makes a random number from -1 to 1
+        int rand_manaPower = (int) (Math.random()* (11 - (-11)) + -11); // makes a random number from -10 to 10
+
+        level++;
+        strenght++;
+        agility++;
+        intelligence++;
+        hit_points =  hit_points + strenght / 2 + rand_hitPoints;
+        System.out.println("Ding! Level increased from " + oldLevel + " to " + level); 
+        armor_class = armor_class + agility /8;
+        mana_power = (int) (intelligence * 2 + rand_manaPower);
+        return 0;
+    }
     public static void main(String[] args) {
     //roll(10);
     //dieRollsStats();
     rpgGame();
-    printstatus();
+    levelUp();
+    printStats();
+    
+    
+
 }
     
 }

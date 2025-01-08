@@ -233,6 +233,11 @@ public class Review {
     return stars; 
   }
 
+  public static String fakeReview(String filename){
+
+    return null;
+  }
+
   public static void main(String[] args) {
     Review.totalSentiment("Unit_4/ConsumerReviewLabFiles/negative_review/negativeReview 1.txt");
     

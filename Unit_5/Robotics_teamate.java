@@ -1,6 +1,7 @@
 package Unit_5;
 
 public class Robotics_teamate {
+    private static String name;
     private static int rank;
     private static String role;
     private static int attandance;
@@ -8,6 +9,7 @@ public class Robotics_teamate {
     private static int dues;
         
         public Robotics_teamate(int teammate_rank, String teammate_role, int teammate_attandance, boolean teammate_coach, int teammate_dues){ //construstor for the teammates
+            name = teammate_name;
             rank = teammate_rank;
             role = teammate_role;
             attandance = teammate_attandance;
@@ -22,6 +24,9 @@ public class Robotics_teamate {
             System.out.println("Are they a coach: " + coach);
             duesAmmount();
         }
+        public void printName(){ //prints that person name 
+        System.out.println("Name: " + name);
+    }
         public String printRank(){ // dectects your rank
             System.out.print("Rank: ");
             if (coach){
@@ -94,7 +99,7 @@ public class Robotics_teamate {
         }
 
             public static void main(String[] args) {
-                Robotics_teamate dylan = new Robotics_teamate(5,"builder",1,false,5);
+                Robotics_teamate dylan = new Robotics_teamate("dylan",5,"builder",1,false,5);
                 dylan.printStats();
 
                 //Robotics_teamate caleb = new Robotics_teamate(1,"programer",1,false);

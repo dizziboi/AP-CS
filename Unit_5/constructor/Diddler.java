@@ -1,3 +1,4 @@
+package constructor;
 public class Diddler
 {
     // write 2 instance variables for Riddle's question and answer: private type

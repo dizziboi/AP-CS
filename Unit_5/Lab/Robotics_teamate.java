@@ -1,4 +1,4 @@
-
+package Lab;
 
 public class Robotics_teamate {
     private static String name;

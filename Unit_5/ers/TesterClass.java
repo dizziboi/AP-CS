@@ -1,3 +1,4 @@
+package ers;
 public class TesterClass
 {
     // main method for testing

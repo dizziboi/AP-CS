@@ -1,3 +1,4 @@
+package ers;
 /**
  * Pet class (complete comments)
  *
@@ -41,6 +42,22 @@ class pet
     public String getBreed() // it's a getter for the breed
     {
         return breed;
+    }
+
+    public void setName(String newName){ //setter for a new name 
+        name = newName;
+    }
+    public void setAge(int newAge){ //setter for a new age 
+        age = newAge;
+    }
+    public void setWeight(double newWeight){ //setter for weight
+        weight = newWeight;
+    }
+    public void setType(String newType){ //setter for type
+        type = newType;
+    }
+    public void setBreed(String newBreed){ //setter for breed
+        breed = newBreed;
     }
     // Don't forget to complete the main method in the TesterClass below!
     

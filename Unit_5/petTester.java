@@ -1,18 +1,18 @@
 /**
  * Pet class (complete comments)
  *
- * @author Caleb Bronw
+ * @author Caleb Brown
  * @since 1/26/25
  */
 class pet
 {
  private String name;
  private int age;
- private int weight;
+ private double weight;
  private String type;
  private String breed;
     // keep track of the name, age, weight, type of animal, and breed of the pet
-    public pet(String initName, int initAge, int initWeigh,String initType, String initBreed){ // constructor for pet it need a name,age,weight,type,and breed
+    public pet(String initName, int initAge, double initWeigh,String initType, String initBreed){ // constructor for pet it need a name,age,weight,type,and breed
         name = initName;
         age = initAge;
         weight = initWeigh;
@@ -30,7 +30,7 @@ class pet
     {
         return age;
     }
-    public int getWeight() // it's a getter for the weight
+    public double getWeight() // it's a getter for the weight
     {
         return weight;
     }

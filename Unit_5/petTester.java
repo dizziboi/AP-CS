@@ -46,11 +46,11 @@ class pet
     
     public String toString() // uses the toString method to print all of the stats for a dog in a class 
     {
-        return "Name: " + name + "Age: " + age + "Weight : " + weight + "Type: " + type +  "Breed: " + breed;
+        return "Name: " + name + " Age: " + age + " Weight : " + weight + " Type: " + type +  " Breed: " + breed;
     }
 }
 
-class TesterClass2
+public class petTester
 {
     // main method for testing
     public static void main(String[] args)
@@ -58,8 +58,8 @@ class TesterClass2
         // Create 2 Pet objects and test all your methods
         pet oliver = new pet("oliver", 5, 10, "cat", "gray");
         pet louie = new pet("louie", 5, 17, "cat", "white");
-        oliver.toString();
-        //louie.stats();
+        System.out.println(oliver);
+        System.out.println(louie);
 
     }
 }

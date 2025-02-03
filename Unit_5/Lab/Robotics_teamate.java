@@ -1,12 +1,12 @@
 package Lab;
 
 public class Robotics_teamate {
-    private static String name;
-    private static int rank;
-    private static String role;
-    private static int attandance;
-    private static boolean coach;
-    private static int dues;
+    private String name;
+    private int rank;
+    private String role;
+    private int attandance;
+    private boolean coach;
+    private int dues;
         
         public Robotics_teamate(String teammate_name, int teammate_rank, String teammate_role, int teammate_attandance, boolean teammate_coach, int teammate_dues){ //construstor for the teammates
             name = teammate_name;
@@ -101,13 +101,21 @@ public class Robotics_teamate {
             rank++;
         }
 
+        public String toString()
+        {
+            String output = "ripajw";
+            return "name: " + name + "rank: " + rank + "role: " + "attandance: " + attandance + "coach: " + coach + "dues: " + dues;
+        }
+
             public static void main(String[] args) {
                 Robotics_teamate dylan = new Robotics_teamate("dylan",5,"builder",1,false,5);
                 dylan.printStats();
-
-                //Robotics_teamate caleb = new Robotics_teamate(1,"programer",1,false);
-               // caleb.setAttandance(5);
-               // caleb.areTheyCoach(); 
+                //dylan.name = "Malyd";
+                //dylan.printName();
+                System.out.println(dylan);
+                /*Robotics_teamate caleb = new Robotics_teamate(1,"programer",1,false);
+               / caleb.setAttandance(5);
+             caleb.areTheyCoach(); */
 
     }
 

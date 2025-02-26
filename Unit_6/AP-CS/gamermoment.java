@@ -1,5 +1,3 @@
-package Unit_6;
-
 public class gamermoment {
     public static void main(String[] args)
     {

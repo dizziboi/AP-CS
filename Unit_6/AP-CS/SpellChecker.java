@@ -23,7 +23,7 @@ public class SpellChecker
      * Return false if it is not found.
      */
 
-     public static void 
+     
     // Do not change "throws IOException" which is needed for reading in the input
     // file
     public static void main(String[] args) throws IOException

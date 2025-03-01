@@ -5,9 +5,9 @@ public class studnets       // Add your class name here!
     public static void main(String[] args)
     {
        // 2. Create an array of 3 objects of your class.
-       String[] names = {"Caleb","ben","kyte","dylan"};
-       int[] age = {17,18,25,18};
-       String[] job = {"Coding","Build","Coach","Drive Coach"};
+       String[] names = new String[3];
+       int[] age = new int[3];
+       String[] job = new String[3];
        // 3. Initialize array elements 0-2 to new objects of your class.
         String programer = names[0];
         String builber = names[1];
@@ -20,6 +20,18 @@ public class studnets       // Add your class name here!
         String coachJob = job[2];
 
        // 4. Call the print method of each object in the array using the array index.
+       for (int i = 0; i < names.length; i++)
+       {
+           System.out.println(names[i]);
+       }
+       for (int i = 0; i < age.length; i++)
+       {
+           System.out.println(age[i]);
+       }
+       for (int i = 0; i < job.length; i++)
+       {
+           System.out.println(job[i]);
+       }
 
 
     }

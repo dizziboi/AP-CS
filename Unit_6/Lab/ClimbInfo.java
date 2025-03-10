@@ -6,17 +6,22 @@ public class ClimbInfo
 * @param peakName the name of the mountain peak
 * @param climbTime the number of minutes taken to complete the climb
 */
+private String name;
+private int time;
 public ClimbInfo(String peakName, int climbTime)
-{ /* implementation not shown */ }
+{ 
+    name = peakName;
+    time = climbTime;
+}
 /** @return the name of the mountain peak
 */
 public String getName()
 {
-    return null; /* implementation not shown */ }
+    return name;  }
 /** @return the number of minutes taken to complete the climb
 */
 public int getTime()
 {
-    return 0; /* implementation not shown */ }
+    return time;  }
 // There may be instance variables, constructors, and methods that are not shown.
 }

@@ -8,7 +8,7 @@ public class StringWorker {
         {
             word = arr[index];
 
-            if (word.equals(target))
+            if (word ==(target))
             {
                 return index;
             }

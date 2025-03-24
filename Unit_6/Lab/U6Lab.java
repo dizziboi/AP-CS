@@ -1,4 +1,4 @@
-package Unit_6.Lab;
+
 
 public class U6Lab {
     static int[] arrayCopy = {};

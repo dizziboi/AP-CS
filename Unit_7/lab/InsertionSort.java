@@ -1,3 +1,4 @@
+package lab;
 public class InsertionSort {
 
     // Method to perform insertion sort on an array of integers

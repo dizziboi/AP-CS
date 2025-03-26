@@ -1,9 +1,5 @@
-<<<<<<< HEAD
-
-=======
 package Unit_6.Lab;
 import java.util.Arrays;
->>>>>>> 427e51920c8daa5842e79e9a37343f8d6e2cb09d
 
 public class U6Lab {
     static boolean isTrue;

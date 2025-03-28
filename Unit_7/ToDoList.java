@@ -1,31 +1,31 @@
-package Unit_7;
+
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class ToDoList
 {
     public static void main(String[] args)
     {
         // Rewrite this code to use an ArrayList instead of an array
-        String[] toDoList = new String[3];
-        
-        toDoList[0] = "Do homework";
-        toDoList[1] = "Help make dinner";
-        toDoList[2] = "Call grandma";
+        List<String> toDoList = new ArrayList<String>();
+        toDoList.add("Do homework"); 
+        toDoList.add("Help make dinner"); 
+        toDoList.add("Call grandma"); 
 
         // changing element 1
-        toDoList[1] = "Order pizza";
+        toDoList.set(1, "Order pizza");
 
-        System.out.println(toDoList.length + " things to do!");
-        System.out.println("Here's the first thing to do: " + toDoList[0]);
+        System.out.println(toDoList.size() + " things to do!");
+        System.out.println("Here's the first thing to do: " + toDoList.get(0));
 
         // remove item 0 and move everything down
         //  (this can be done in one method call with ArrayList)
-        toDoList[0] = toDoList[1];
-        toDoList[1] = toDoList[2];
-        toDoList[2] = "";
+        toDoList.set(0, null);
 
-        System.out.println("Here's the next thing to do: " + toDoList[0]);
+        System.out.println("Here's the next thing to do: " + toDoList.set(0, "Order pizza"));
 
         // Why is an ArrayList better than an array for a toDoList?
-        // Answer:
+        // Answer: If you need to dynamically change your array you can do that with a ArrayList and not a normal array
     }
 }

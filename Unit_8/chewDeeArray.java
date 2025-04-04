@@ -27,8 +27,8 @@ public class chewDeeArray {
         seatingChart[1][1] = "Suzy";
         seatingChart[2][0] = "Emma";
         seatingChart[2][1] = "Luke";
-        seatingChart[3][1] = "Caleb";
-        seatingChart[3][2] = "Jude";
+        seatingChart[3][0] = "Caleb";
+        seatingChart[3][1] = "Jude";
 
         // print the contents
         System.out.println(ticketInfo);
